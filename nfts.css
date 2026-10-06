@@ -11,7 +11,7 @@ html{scrollbar-gutter:stable}
 .nft-page button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .nft-page button:disabled{cursor:default;opacity:.45}
 .text-button{background:none;border:0;padding:8px 0;min-height:44px;text-decoration:underline;text-underline-offset:4px}
-.solid-button{background:#000;border:1px solid #000;color:#EC673A!important;border-radius:4px;padding:12px 22px;min-height:48px;transition:opacity .16s,transform .16s}
+.solid-button{background:#000;border:1px solid #000;color:#EC673A!important;border-radius:4px;padding:12px 22px;min-height:48px;transition:opacity.16s,transform.16s}
 .solid-button:active:not(:disabled){transform:translateY(1px)}
 .nft-page :focus-visible{outline:2px solid #000;outline-offset:4px}
 .nft-page [hidden]{display:none!important}
@@ -40,16 +40,16 @@ html{scrollbar-gutter:stable}
 .nft-tabs{display:flex;justify-content:center;gap:30px;margin:0;max-width:100%;overflow-x:auto;scrollbar-width:none}
 .nft-opensea{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;font-size:23px;font-weight:400;white-space:nowrap;text-decoration:underline;text-underline-offset:4px}
 .nft-tabs button{white-space:nowrap;flex-shrink:0;border:0;background:none;padding:8px 0;min-height:44px;font-size:23px;font-weight:400;text-decoration:none;position:relative}
-.nft-tabs button::after{content:'';position:absolute;left:0;right:0;bottom:4px;height:1px;background:#000;opacity:0;transform:scaleX(.65);transition:opacity .22s ease,transform .22s ease}
+.nft-tabs button::after{content:'';position:absolute;left:0;right:0;bottom:4px;height:1px;background:#000;opacity:0;transform:scaleX(.65);transition:opacity.22s ease,transform.22s ease}
 .nft-tabs button[aria-selected=true]::after{opacity:1;transform:scaleX(1)}
-.nft-panel{min-height:var(--nft-panel-floor,130px)}.nft-panel.entering{animation:nft-panel-in .28s cubic-bezier(.25,.46,.45,.94)}.nft-panel p{max-width:670px}.nft-panel>p:first-child{margin-top:0}.nft-panel h2{font-size:24px;font-weight:500;margin:0 0 12px}
+.nft-panel{min-height:var(--nft-panel-floor,130px)}.nft-panel.entering{animation:nft-panel-in.28s cubic-bezier(.25,.46,.45,.94)}.nft-panel p{max-width:670px}.nft-panel>p:first-child{margin-top:0}.nft-panel h2{font-size:24px;font-weight:500;margin:0 0 12px}
 @keyframes nft-panel-in{from{opacity:.2}to{opacity:1}}
 .nft-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px}
 .nft-card{min-width:0}
 .nft-card img{width:100%;height:auto;display:block;aspect-ratio:1}.nft-card h3{font-size:20px;font-weight:500;margin:6px 0 1px}.nft-card p{font-size:17px;margin:2px 0;overflow-wrap:anywhere}
 .nft-card-actions{display:flex;align-items:center;gap:0 18px;flex-wrap:wrap;font-size:17px}.nft-card-actions:empty{display:none}
 .nft-card-actions>button,.nft-card-actions>a{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;line-height:1.3;white-space:nowrap;text-decoration:underline;text-underline-offset:4px}
-.nft-card .nft-seller{display:flex;flex-wrap:wrap;gap:0 5px;font-size:15px;line-height:1.4;margin:5px 0 0}.nft-seller a{white-space:nowrap}
+.nft-card.nft-seller{display:flex;flex-wrap:wrap;gap:0 5px;font-size:15px;line-height:1.4;margin:5px 0 0}.nft-seller a{white-space:nowrap}
 .nft-history{list-style:none;margin:0;padding:0}
 .nft-history-row{display:grid;grid-template-columns:52px minmax(0,1fr) auto;column-gap:16px;row-gap:2px;align-items:center;padding:12px 0}
 .nft-history-picture{grid-row:1/3}.nft-history-picture img{display:block;width:52px;height:52px;border-radius:50%}
@@ -61,7 +61,7 @@ html{scrollbar-gutter:stable}
 .nft-status{font-size:18px;max-width:780px;overflow-wrap:anywhere}.nft-status:empty{display:none}.nft-status a{white-space:nowrap}
 .nft-footer{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:28px;font-size:17px}.nft-footer a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}.nft-footer a:hover{text-decoration:underline}
 .nft-page dialog{color:#000;background:#EC673A;border:1px solid #000;max-width:440px;width:calc(100vw - 32px);max-height:calc(100dvh - 32px);overflow:auto;padding:28px;box-shadow:none;overscroll-behavior:contain}
-.nft-page dialog[open]{animation:nft-dialog-in .15s ease-out}.nft-page dialog::backdrop{background:#0008}
+.nft-page dialog[open]{animation:nft-dialog-in.15s ease-out}.nft-page dialog::backdrop{background:#0008}
 .nft-page dialog h2{font-size:27px;font-weight:500;line-height:1.2;margin:0 28px 18px 0}.action-body{overflow-wrap:anywhere}.action-body p{margin:0 0 14px}.action-body p:last-child{margin-bottom:0}
 .dialog-close{position:absolute;right:12px;top:8px;font-size:28px!important;text-decoration:none;min-width:44px;min-height:44px}
 .wallet-options{display:grid;gap:8px}.wallet-options button{display:flex;align-items:center;gap:16px;text-align:left;padding:10px 0;text-decoration:none}.wallet-options button:hover{text-decoration:underline}.wallet-options img{width:34px;height:34px;object-fit:contain}
@@ -76,4 +76,4 @@ html{scrollbar-gutter:stable}
 #saved-action p{margin:0}#saved-action{margin:18px 0}
 @media(max-width:500px){#disconnect{flex-direction:column;gap:0;line-height:1.25;font-size:14px}#wallet-address{font-size:12px}}
 
-@media(max-width:700px){.nft-header{align-items:flex-start}.nft-header .header-socials{gap:16px}.nft-header nav{row-gap:4px}}
+@media(max-width:700px){.nft-header{align-items:flex-start}.nft-header.header-socials{gap:16px}.nft-header nav{row-gap:4px}}

@@ -6,9 +6,9 @@
 @media(max-width:500px){.reader{padding:26px 22px;font-size:20px}.reader nav{gap:14px}.reader header{margin-bottom:32px}}
 
 .header-socials{display:flex;align-items:center;gap:20px;flex-shrink:0}
-.reader header nav{align-items:center;flex-wrap:wrap;justify-content:flex-end}.reader .header-socials{gap:14px}.reader .social-link{display:grid;place-items:center;width:30px;min-height:44px}.reader .social-link svg{width:26px;height:26px}
-.lost-header{position:absolute;top:24px;right:clamp(24px,6vw,108px)}.lost-header .social-link{display:grid;place-items:center;width:34px;min-height:44px}.lost-header .social-link svg{width:30px;height:30px}
+.reader header nav{align-items:center;flex-wrap:wrap;justify-content:flex-end}.reader.header-socials{gap:14px}.reader.social-link{display:grid;place-items:center;width:30px;min-height:44px}.reader.social-link svg{width:26px;height:26px}
+.lost-header{position:absolute;top:24px;right:clamp(24px,6vw,108px)}.lost-header.social-link{display:grid;place-items:center;width:34px;min-height:44px}.lost-header.social-link svg{width:30px;height:30px}
 
 .identity-index { columns: 3 14rem; column-gap: 2rem; }
-.identity-index li { break-inside: avoid; padding-block: .25rem; }
+.identity-index li { break-inside: avoid; padding-block:.25rem; }
 .reader dd { margin-left: 0; overflow-wrap: anywhere; }

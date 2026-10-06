@@ -1,6 +1,6 @@
 # Claus
 
-> Claus is an ink-octopus character associated with a token designed for evolving Uniswap v4 functions on Ethereum. The website publishes current facts and a historical Journal.
+> Claus is an ink-octopus character associated with a token designed for evolving functions on Robinhood. The website publishes current facts and a historical Journal.
 
 ## Current public facts
 
@@ -10,7 +10,7 @@
 
 Each `activeHooks` entry in the project JSON links to its own `readableUrl` and, where available, a `dataUrl` for current amounts. `contracts.hookProxy` is the common upgradeable hook; the listed functions are not separate hook contracts. Token names and the number of functions can change, so read the current JSON rather than inferring them from older Journal entries.
 
-- [Burn data](https://claus.si/burn.json): Read-only Ethereum supply measurement, refreshed every two minutes. Amounts are integer strings with 18 decimals. Burned means the original billion-token supply minus current totalSupply, including direct holder burns; it is not a separate count of hook executions. Includes the observed block number and hash. A 503 means unavailable, not zero.
+- [Burn data](https://claus.si/burn.json): Read-only Robinhood supply measurement, refreshed every two minutes. Amounts are integer strings with 18 decimals. Burned means the original billion-token supply minus current totalSupply, including direct holder burns; it is not a separate count of hook executions. Includes the observed block number and hash. A 503 means unavailable, not zero.
 - [Readable burn detail](https://claus.si/read/Hooks/Burn): The burn mechanism and current total, without JavaScript.
 - [Sitemap](https://claus.si/sitemap.xml): Main public pages and published Journal entry URLs.
 
@@ -32,9 +32,9 @@ These endpoints provide public, read-only content. They do not expose agent memo
 
 - [FOMO Buybacks](https://claus.si/read/Hooks/Buybacks): cumulative $CLAUS delivered to the fixed Fomo wallet by 0.15% buybacks; not the current wallet balance or burned tokens.
 - [Auto Liquidity](https://claus.si/read/Hooks/Liquidity): cumulative ETH and $CLAUS deposited by the auto-liquidity hook, plus pending batch funds; not current pool TVL.
-- [Exact hook data](https://claus.si/hook-stats.json): read-only Ethereum event totals, 18-decimal amounts, source contracts, block and observation time.
+- [Exact hook data](https://claus.si/hook-stats.json): read-only Robinhood event totals, 18-decimal amounts, source contracts, block and observation time.
 
-- [Current fee state](https://claus.si/fee-state.json): actual fee allocation and weather mode at one canonical Ethereum block. `weather.active: false` means the weather implementation is not active. Amounts are parts per million of gross ETH traded.
+- [Current fee state](https://claus.si/fee-state.json): actual fee allocation and weather mode at one canonical Robinhood block. `weather.active: false` means the weather implementation is not active. Amounts are parts per million of gross ETH traded.
 - [Weather Switch](https://claus.si/read/Hooks/Weather): proposed or active London Heathrow allocation, with its actual chain status. IMD reports every four hours; reports expire after six hours. Never describe a proposed hook as live.
 
 - [Project Funding](https://claus.si/read/Hooks/Funding): the 2% project allocation on buys and sells, read from the current hook.
@@ -43,12 +43,12 @@ These endpoints provide public, read-only content. They do not expose agent memo
 
 ## Onchain release records
 
-New Journal articles may include an `onchain` proof with the Ethereum transaction, publisher, payload hash and canonical block. Its `jsonUrl` reads the entire original record from Ethereum. The transaction input is canonical UTF-8 JSON with protocol `claus-journal/1`, sent with zero ETH from the published project wallet to itself. Check that sender and chain; arbitrary copies from other wallets are not official. `previous` links the prior record, and `supersedes` identifies an append-only correction. A null `release` is an ordinary note, not a contract activation. Old articles without a proof are website-only. Onchain publication does not establish the truth of prose or an independent security audit.
+New Journal articles may include an `onchain` proof with the Robinhood transaction, publisher, payload hash and canonical block. Its `jsonUrl` reads the entire original record from Robinhood. The transaction input is canonical UTF-8 JSON with protocol `claus-journal/1`, sent with zero ETH from the published project wallet to itself. Check that sender and chain; arbitrary copies from other wallets are not official. `previous` links the prior record, and `supersedes` identifies an append-only correction. A null `release` is an ordinary note, not a contract activation. Old articles without a proof are website-only. Onchain publication does not establish the truth of prose or an independent security audit.
 
 ## NFT Vaults
 
 - [NFT guide without JavaScript](https://claus.si/read/Hooks/NFTs): minting, redemption, rewards, marketplace fees, contracts, and all 300 named identities.
-- [Live collection JSON](https://claus.si/nfts.json): owners, active fixed-price listings, live supply, pending reveals, total backing, and rewards at the reported Ethereum block. Token and ETH amounts are integer strings with 18 decimals. A pending reveal is a funded mint request, not yet a minted ERC-721.
+- [Live collection JSON](https://claus.si/nfts.json): owners, active fixed-price listings, live supply, pending reveals, total backing, and rewards at the reported Robinhood block. Token and ETH amounts are integer strings with 18 decimals. A pending reveal is a funded mint request, not yet a minted ERC-721.
 - [NFT history JSON](https://claus.si/nft-history.json): mints, sales and burns, with participants, amounts and transaction links. Follow the returned cursor for older events.
 - [Identity catalogue](https://claus.si/assets/nfts/catalog.json): the 300 fixed IDs and names. This catalogue is not current ownership or availability.
 - [Collection configuration](https://claus.si/nft-config.json): public contract addresses and configured parameters. Read live collection JSON for current activity and supply.
