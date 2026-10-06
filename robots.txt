@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://claus.si/sitemap.xml

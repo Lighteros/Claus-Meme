@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "deployed",
+  "chainId": 1,
+  "token": "0x1b54E762aa34CF6E28E9C082F2848e28E45DA6b8",
+  "hook": "0x37Bfb8AC7C960E558657871D41Ca70E07e7DbfFf",
+  "collection": "0x80396c7131159eB92E7E84839e51C9887A7A95d9",
+  "market": "0x7832B1B34B8dBec979a44634BC095821c91FFc95",
+  "implementation": "0x31781F2C5B82a4E25d146e0207fD0bf7f5e19192",
+  "art": "0x714fa33983389B44d812bE08Cee2bB30CE968c6E",
+  "startBlock": "26129224",
+  "capacity": 300,
+  "backingTokens": "50000",
+  "rewardPips": 3500,
+  "marketFeeBps": 200
+}

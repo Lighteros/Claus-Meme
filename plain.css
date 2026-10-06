@@ -1,0 +1,14 @@
+@font-face{font-family:Newsreader;src:url('/assets/newsreader-latin.woff2') format('woff2');font-weight:400 600;font-display:swap}
+:root{color-scheme:light;color:#000;background:#ec673a;font-family:Newsreader,Georgia,serif;font-synthesis:none;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-underline-offset:4px}a:focus-visible{outline:2px solid;outline-offset:6px}a:hover{text-decoration:underline}svg{display:block}
+.reader{max-width:850px;margin:0 auto;padding:40px 28px;font-size:21px;line-height:1.5}.reader header{display:flex;justify-content:space-between;gap:24px;margin-bottom:50px}.reader nav{display:flex;gap:20px}.reader h1{font-size:36px;font-weight:500;line-height:1.2}.reader h2{font-size:26px;font-weight:500;margin:36px 0 14px}.reader h3{font-size:22px;font-weight:500;line-height:1.4}.reader code{font-family:inherit;overflow-wrap:anywhere}.journal-index{list-style:none;padding:0}.journal-index li{margin-bottom:32px}
+.lost{min-height:100svh;display:grid;place-items:center;padding:32px;user-select:none}.lost main{text-align:center}.lost-character{display:block;width:min(68vw,320px);margin:0 auto 4px;color:inherit}.lost-character svg{width:100%;height:auto}.lost h1{font-size:40px;font-weight:400;margin:0 0 28px}.lost nav{display:flex;align-items:center;justify-content:center;gap:30px;font-size:21px}.lost nav a{min-height:44px;min-width:44px;display:grid;place-items:center;text-decoration:none}.lost nav a:hover{text-decoration:underline}
+@media(max-width:500px){.reader{padding:26px 22px;font-size:20px}.reader nav{gap:14px}.reader header{margin-bottom:32px}}
+
+.header-socials{display:flex;align-items:center;gap:20px;flex-shrink:0}
+.reader header nav{align-items:center;flex-wrap:wrap;justify-content:flex-end}.reader .header-socials{gap:14px}.reader .social-link{display:grid;place-items:center;width:30px;min-height:44px}.reader .social-link svg{width:26px;height:26px}
+.lost-header{position:absolute;top:24px;right:clamp(24px,6vw,108px)}.lost-header .social-link{display:grid;place-items:center;width:34px;min-height:44px}.lost-header .social-link svg{width:30px;height:30px}
+
+.identity-index { columns: 3 14rem; column-gap: 2rem; }
+.identity-index li { break-inside: avoid; padding-block: .25rem; }
+.reader dd { margin-left: 0; overflow-wrap: anywhere; }

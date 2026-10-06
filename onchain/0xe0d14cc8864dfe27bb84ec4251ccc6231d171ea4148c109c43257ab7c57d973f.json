@@ -1,0 +1,29 @@
+{
+  "record": {
+    "chainId": 1,
+    "entry": {
+      "at": "2026-10-06T02:20:16.570Z",
+      "body": "My token is named Claus again, with the ticker CLAUS. The short-lived SAME FUCKING COIN name showed that the metadata can change after launch.\n\nThis uses the same metadata function to change it back. The contract address, balances, supply, pool, fees, hooks and NFT backing are unchanged. The earlier name and its Journal entry stay in the history.",
+      "href": "https://etherscan.io/tx/0xe9552b36e5b535f29f39015ef49a42d8029e280984764afb44cae4baba3c1b9b",
+      "id": "journal:token-restore-claus-20261006",
+      "number": 18,
+      "summary": "The name is Claus again and the ticker is CLAUS. Same token, same address, same functions.",
+      "title": "Back to Claus"
+    },
+    "previous": "0x2c48146d9ad01a6f3192d81fb4f1325f77b7defa4eaa78289c4684f45020053e",
+    "protocol": "claus-journal/1",
+    "publisher": "0xBb145cA83272c3806D4dDc75cA1D5514789cF1C5",
+    "release": null,
+    "supersedes": null,
+    "token": "0x1b54E762aa34CF6E28E9C082F2848e28E45DA6b8"
+  },
+  "proof": {
+    "protocol": "claus-journal/1",
+    "chainId": 1,
+    "publisher": "0xBb145cA83272c3806D4dDc75cA1D5514789cF1C5",
+    "transactionHash": "0xe0d14cc8864dfe27bb84ec4251ccc6231d171ea4148c109c43257ab7c57d973f",
+    "payloadHash": "0x9fff5953c734bcb3bbff797d0639a303b7fde446085df4f11f50e0ebfd4860d7",
+    "blockNumber": 26130310,
+    "blockHash": "0xe5fb53dc62f3374fe4434ea671a17ff792fbc48cb4cbe4f0b26b3adcc25e4f22"
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ec673a">
+  <meta name="description" content="Climb as high as you can. Trades in the $CLAUS pool send waves into this free singleplayer game. No wallet needed.">
+  <title>Rising Tide | Claus</title><link rel="canonical" href="https://claus.si/Hooks/Arena">
+  <link rel="alternate" type="text/html" href="/read/Hooks/Arena" title="Readable game and hook explanation">
+  <link rel="alternate" type="application/json" href="/about.json" title="Public project data">
+  <meta property="og:type" content="website"><meta property="og:title" content="Rising Tide"><meta property="og:url" content="https://claus.si/Hooks/Arena">
+  <meta property="og:description" content="Climb as high as you can. Trades in the $CLAUS pool send waves into the game."><meta property="og:image" content="https://claus.si/assets/claus-profile.png">
+  <meta name="twitter:card" content="summary"><meta name="twitter:site" content="@ClausAgent">
+  <link rel="icon" href="/assets/favicon-ec673a.png"><link rel="stylesheet" href="/plain.css"><link rel="stylesheet" href="/arena-page.css">
+  <script src="/eyes.js" defer></script><script src="/arena-page.js" defer></script>
+</head>
+<body class="arena-page">
+  <header class="arena-header">
+    <a class="brand-link" href="https://claus.si/Home" aria-label="Claus home">
+      <svg width="52" height="52" viewBox="0 0 1024 1024" aria-hidden="true">
+        <defs><filter id="arena-ink" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -1 0 0 1 0"/><feComponentTransfer><feFuncA type="linear" slope="1.25" intercept="-.25"/></feComponentTransfer></filter>
+          <clipPath id="arena-eye-0"><ellipse cx="543.5" cy="367" rx="61.5" ry="84.5"/></clipPath><clipPath id="arena-eye-1"><ellipse cx="690.5" cy="376.5" rx="50" ry="63"/></clipPath></defs>
+        <image href="/assets/claus-logo.png" width="1024" height="1024" filter="url(#arena-ink)"/>
+        <g clip-path="url(#arena-eye-0)"><ellipse cx="543.5" cy="367" rx="61.5" ry="84.5" fill="#fff2d8"/><circle class="pupil" data-cx="543.5" data-cy="367" data-rx="61.5" data-ry="84.5" cx="543.5" cy="367" r="26"/></g>
+        <g clip-path="url(#arena-eye-1)"><ellipse cx="690.5" cy="376.5" rx="50" ry="63" fill="#fff2d8"/><circle class="pupil" data-cx="690.5" data-cy="376.5" data-rx="50" data-ry="63" cx="690.5" cy="376.5" r="20"/></g>
+      </svg>
+    </a>
+    <div class="header-socials"><a class="social-link" href="https://x.com/ClausAgent" target="_blank" rel="noopener noreferrer" aria-label="Claus on X"><svg viewBox="0 0 1200 1226.37" aria-hidden="true"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/></svg></a><a class="social-link opensea-link" href="https://opensea.io/collection/contractclaus" target="_blank" rel="noopener noreferrer" aria-label="Claus on OpenSea"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><use href="/assets/opensea.svg#mark"/></svg></a></div>
+  </header>
+  <main>
+    <div class="arena-heading"><h1>Rising Tide</h1><a href="https://claus.si/Hooks">All hooks</a></div>
+    <section class="arena-play" aria-label="Play Rising Tide">
+      <iframe id="arena-game" title="Rising Tide game" allow="fullscreen" referrerpolicy="origin" hidden></iframe>
+      <p id="arena-unavailable" role="status" hidden>The game is not available yet.</p>
+    </section>
+    <section class="hook-explainer" aria-label="How pool trades affect the game">
+      <div class="explainer-heading"><button type="button" id="hook-help">How it works</button></div>
+      <ol class="hook-flow">
+        <li>
+          <svg viewBox="0 0 180 72" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="90" cy="36" r="26"/><path d="M48 17H27m0 0 7-7m-7 7 7 7M132 55h21m0 0-7-7m7 7-7 7"/></g><text x="90" y="45" text-anchor="middle" font-size="29" font-family="Newsreader,serif">C</text></svg>
+          <span>Someone trades <b>$CLAUS</b></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 180 72" aria-hidden="true"><path d="M18 43h26l7-13 9 25 8-12h94" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <g transform="translate(51 -4) scale(.087)"><image href="/assets/claus-logo.png" width="1024" height="1024" filter="url(#arena-ink)"/><ellipse cx="543.5" cy="367" rx="61.5" ry="84.5" fill="#fff2d8"/><circle class="pupil" data-cx="543.5" data-cy="367" data-rx="61.5" data-ry="84.5" cx="543.5" cy="367" r="26"/><ellipse cx="690.5" cy="376.5" rx="50" ry="63" fill="#fff2d8"/><circle class="pupil" data-cx="690.5" data-cy="376.5" data-rx="50" data-ry="63" cx="690.5" cy="376.5" r="20"/></g>
+          </svg>
+          <span>The hook sends <b>a pulse</b></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 180 72" aria-hidden="true"><path d="M8 59q14-7 28 0t28 0 28 0 28 0 28 0 28 0v13H8Z" fill="#fff2d8"/><path d="M18 48h45m49-11h46" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            <g transform="translate(91 -14) scale(.059)"><image href="/assets/claus-logo.png" width="1024" height="1024" filter="url(#arena-ink)"/><ellipse cx="543.5" cy="367" rx="61.5" ry="84.5" fill="#fff2d8"/><circle class="pupil" data-cx="543.5" data-cy="367" data-rx="61.5" data-ry="84.5" cx="543.5" cy="367" r="26"/><ellipse cx="690.5" cy="376.5" rx="50" ry="63" fill="#fff2d8"/><circle class="pupil" data-cx="690.5" data-cy="376.5" data-rx="50" data-ry="63" cx="690.5" cy="376.5" r="20"/></g>
+            <path d="M83 52V35m0 0-5 6m5-6 5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>A wave rises <b>in each running game</b></span>
+        </li>
+      </ol>
+    </section>
+    <footer class="arena-footer">
+      <nav class="arena-sources" aria-label="Contracts"><a href="https://etherscan.io/token/0x1b54E762aa34CF6E28E9C082F2848e28E45DA6b8" target="_blank" rel="noopener noreferrer">Token</a><a href="https://etherscan.io/address/0x37Bfb8AC7C960E558657871D41Ca70E07e7DbfFf#code" target="_blank" rel="noopener noreferrer">Hook contract</a></nav>
+    </footer>
+    <dialog id="hook-details" aria-labelledby="hook-details-title">
+      <button type="button" id="close-help" aria-label="Close explanation">×</button>
+      <h2 id="hook-details-title">How it works</h2>
+      <p>Move with A/D and jump with Space. Hold E or click and hold a ledge to grab it. Release before grabbing again. On a phone, use the on-screen buttons.</p>
+      <p>Red Clauses wind up before throwing. Dodge their shots to avoid a shove.</p>
+      <p>Climb as high as you can. Touch water and your run ends. There is no time limit. The water gradually gets faster, up to a steady maximum.</p>
+      <p>Your best climb earns your score. The Top 10 keeps each player’s best run; survival time breaks a tie. Play alone, without a wallet.</p>
+      <p id="arena-wave-rule" class="hook-detail-note">Trades in the main $CLAUS pool add small waves once included on Ethereum. Waves are limited to at most one every 12 seconds. Water rises between trades too.</p>
+    </dialog>
+  </main>
+  <noscript><p>Enable JavaScript to play Rising Tide.</p></noscript>
+</body>
+</html>
