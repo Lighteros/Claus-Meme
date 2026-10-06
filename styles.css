@@ -67,6 +67,7 @@ body[data-view='name'].social-link { display: grid; }
 .social-link svg { display: block; width: 100%; height: var(--header-ink-height); transform: translateY(var(--header-ink-offset)); }
 .view { position: relative; width: 100%; height: 100%; }
 .home-view { height: 100dvh; overflow: hidden; outline: none; }
+.home-ca, .token-contract, .token-anchor { display: none !important; }
 #claus-scene { display: block; width: 100%; height: 100%; overflow: visible; }
 #claus-form { outline: none; }
 #claus-form:focus-visible #claus-silhouette { stroke: #fff2d8; stroke-width: 2.5px; }

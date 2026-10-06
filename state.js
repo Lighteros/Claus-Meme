@@ -158,16 +158,22 @@
  byId('token-ticker').title = '$' + token.ticker;
  byId('name-current').textContent = token.name;
  byId('name-ticker').textContent = '$' + token.ticker;
- byId('name-contract').textContent = token.address || 'Not published yet';
- if (token.address) byId('name-contract').href = 'https://robinhoodchain.blockscout.com/token/' + token.address;
- else byId('name-contract').removeAttribute('href');
+ const nameContract = byId('name-contract');
+ if (nameContract) {
+ nameContract.removeAttribute('href');
+ nameContract.textContent = '';
+ }
+ const tokenAnchor = nameContract?.closest('.token-anchor');
+ if (tokenAnchor) tokenAnchor.hidden = true;
  byId('name-status').hidden = true;
  contractAddress = token.address;
  const address = byId('token-address');
- address.hidden = !contractAddress;
+ address.hidden = true;
  byId('token-pending').hidden = !!contractAddress && !notice;
- byId('copy-address').hidden = !contractAddress;
- setCopyAddress(byId('token-contract'), notice ? null : contractAddress, 'Contract address');
+ byId('copy-address').hidden = true;
+ setCopyAddress(byId('token-contract'), null, 'Contract address');
+ const homeCa = byId('home-ca');
+ if (homeCa) homeCa.hidden = true;
  }
 
  function renderFunctions() {
